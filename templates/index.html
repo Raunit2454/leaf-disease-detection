@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaf Disease Detector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-xl rounded-xl p-8 w-full max-w-md text-center">
+        <h1 class="text-2xl font-bold text-green-800 mb-4">🌿 Leaf Disease Detector</h1>
+        <p class="text-gray-600 mb-6">Upload a clear image of a plant leaf to detect diseases and get treatment info.</p>
+
+        <form method="POST" enctype="multipart/form-data" class="space-y-4">
+            <input type="file" name="image" accept="image/*" required
+                   class="w-full border border-gray-300 p-2 rounded-md">
+            <button type="submit"
+                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 rounded-md transition">
+                Predict Plant
+            </button>
+        </form>
+    </div>
+</body>
+</html>
