@@ -54,10 +54,10 @@ def predict_image(img_path):
 
 # === Plant.id API Call ===
 def get_plant_info_from_plant_id(img_path):
-    url = "https://api.plant.id/v2/identify"
+    url = "https://api.plant.id/v2/identify"                
     headers = {
         "Content-Type": "application/json",
-        "Api-Key": "n0k349D2etFOamRGDEalvvSsLt8EUdX8QAXpst4eGMD3rDtNU6"
+        "Api-Key": ""
     }
 
     with open(img_path, "rb") as img_file:
